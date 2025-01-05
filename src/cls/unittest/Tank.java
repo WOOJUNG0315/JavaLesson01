@@ -1,13 +1,14 @@
-package cls;
+package cls.unittest;
 
 public class Tank extends Unit{
     private boolean seize;
 
     public Tank(String name) {
-        setName(name);
-        setHp(500);
-        setPower(50);
-        seize = false;
+//        setName(name);
+//        setHp(500);
+//        setPower(50);
+//        seize = false;
+        super(name,500,50);
     }
 
     public void setSeize(boolean seize) {
@@ -20,6 +21,8 @@ public class Tank extends Unit{
         else
             setPower(50);
 
-        super.attack(target);
+//        super.attack(target);
+    }
+    public void damage(int power) {
     }
 }

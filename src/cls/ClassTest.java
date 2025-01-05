@@ -1,7 +1,6 @@
 package cls;
 
-import java.util.Random;
-import java.util.Scanner;
+import cls.unittest.Unit;
 
 public class ClassTest {
     public static void main(String[] args) {
@@ -33,38 +32,38 @@ public class ClassTest {
         tom.introduce();
 
 
-        // Unit class test
-        Unit u1 = new Unit("Tom",100,10);
-        Unit u2 = new Unit("John",150,15);
-        Unit u3 = new Unit();
-        Unit u4 = new Unit("Tom",100,10);
-        Unit u1_1 = u1;
-
-        u3.setHp(200);
-        u3.setPower(50);
-        u3.setName("Lee");
-
+//        // Unit class test
+//        Unit u1 = new Unit("Tom",100,10);
+//        Unit u2 = new Unit("John",150,15);
+//        Unit u3 = new Unit();
+//        Unit u4 = new Unit("Tom",100,10);
+//        Unit u1_1 = u1;
+//
+//        u3.setHp(200);
+//        u3.setPower(50);
+//        u3.setName("Lee");
+//
 //        int u1_hp = u1.getHp();
 //        int u2_hp = u2.getHp();
-        System.out.printf("u1의 HP는 %d입니다.\n", u1.getHp());
-        System.out.printf("u2의 HP는 %d입니다.\n", u2.getHp());
-        System.out.printf("u3의 HP는 %d입니다.\n", u3.getHp());
-
-        System.out.printf("u1의 이름은 %s입니다.\n", u1.getName());
-        System.out.printf("u2의 이름은 %s입니다.\n", u2.getName());
-        System.out.printf("u3의 이름은 %s입니다.\n", u3.getName());
-
-        System.out.printf("u1의 Power는 %d입니다.\n", u1.getPower());
-        System.out.printf("u2의 Power는 %d입니다.\n", u2.getPower());
-        System.out.printf("u3의 Power는 %d입니다.\n", u3.getPower());
-
-        // 대리자를 이용하여 기능을 호출한다.
-        u1_1.setName("Java");
-        System.out.printf("u1의 이름은 %s입니다.\n", u1.getName());
-
-        //
-        u1.attack(u2);
-        System.out.printf("u2의 HP는 %d입니다.\n", u2.getHp());
+//        System.out.printf("u1의 HP는 %d입니다.\n", u1.getHp());
+//        System.out.printf("u2의 HP는 %d입니다.\n", u2.getHp());
+//        System.out.printf("u3의 HP는 %d입니다.\n", u3.getHp());
+//
+//        System.out.printf("u1의 이름은 %s입니다.\n", u1.getName());
+//        System.out.printf("u2의 이름은 %s입니다.\n", u2.getName());
+//        System.out.printf("u3의 이름은 %s입니다.\n", u3.getName());
+//
+//        System.out.printf("u1의 Power는 %d입니다.\n", u1.getPower());
+//        System.out.printf("u2의 Power는 %d입니다.\n", u2.getPower());
+//        System.out.printf("u3의 Power는 %d입니다.\n", u3.getPower());
+//
+//        // 대리자를 이용하여 기능을 호출한다.
+//        u1_1.setName("Java");
+//        System.out.printf("u1의 이름은 %s입니다.\n", u1.getName());
+//
+//        //
+//        u1.attack(u2);
+//        System.out.printf("u2의 HP는 %d입니다.\n", u2.getHp());
     }
 }
 

@@ -1,6 +1,6 @@
-package cls;
+package cls.unittest;
 
-public class Unit {
+public abstract class Unit {
     private int hp;
     private int power;
     private String name;
@@ -23,6 +23,9 @@ public class Unit {
     public void move(int x, int y) {
         System.out.printf("(%d, %d) 위치로 이동합니다.\n", x, y);
     }
+
+    public abstract void damage(int power);
+    public abstract void attack(Unit target);
 
     // 메소드의 정의 방법
     // 접근제한자 반환형 메소드이름(매개변수들...)
@@ -60,16 +63,6 @@ public class Unit {
             // 이름의 길이가 0보다 크면 이름값을 설정함
             this.name = name;
         }
-    }
-
-    public void damage(int power) {
-        hp -= power;
-        System.out.printf("%s의 HP : %d\n", name, hp);
-    }
-
-    public void attack(Unit target) {
-        target.damage(power);
-        System.out.printf("%s가 %s를 공격함\n", name, target.getName());
     }
 }
 

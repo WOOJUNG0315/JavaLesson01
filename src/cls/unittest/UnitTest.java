@@ -1,4 +1,4 @@
-package cls;
+package cls.unittest;
 
 public class UnitTest {
     public static void main(String[] args) {
