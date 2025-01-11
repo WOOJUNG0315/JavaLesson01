@@ -62,4 +62,29 @@ public class Person {
 
         this.height = height;
     }
+
+    // static 내부클래스 Builder 정의
+    public static class Builder {
+        private int a;        // 나이 데이터(속성, Attribute, Property, Member Variable
+        private String n;    // 이름 데이터
+        private float h;
+
+        public Builder name(String n) {
+            this.n = n;
+            return this;
+        }
+
+        public Builder age(int a) {
+            this.a = a;
+            return this;
+        }
+        public Builder height(float h) {
+            this.h = h;
+            return this;
+        }
+
+        public Person build() {
+            return new Person(n, h, a);
+        }
+    }
 }
