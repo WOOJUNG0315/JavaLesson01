@@ -87,4 +87,9 @@ public class Person {
             return new Person(n, h, a);
         }
     }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
 }
